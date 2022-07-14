@@ -9,10 +9,16 @@
 
 .App{
   height: 100vh;
-  background: rgb(7, 192, 192);
+  background: url(./images/bg.jpg) no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .square{
@@ -63,7 +69,7 @@
   margin-bottom: 1rem;
   padding: 10px 14px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 15px;
   transition: 0.3s ease-out;
   max-height: 7rem;
 }
@@ -80,9 +86,28 @@
 
 .win-history{
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   align-items: center;
   text-align: center;
   justify-content: center;
   margin: 2rem 0;
+}
+
+.reset-btn{
+  background: rgb(27, 255, 255);
+  color: rgb(63, 118, 170);
+  border: 2px solid rgb(63, 118, 170);
+  font-size: 1rem;
+  margin-top: 3rem;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease-out;
+  max-height: 5rem;
+}
+
+.reset-btn:hover{
+  background: rgb(63, 118, 170);
+  color: rgb(27, 255, 255);
+  border: 2px solid rgb(27, 255, 255);
 }

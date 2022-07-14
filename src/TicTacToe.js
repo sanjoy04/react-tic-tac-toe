@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Square from "./Square";
 import EndGame from "./EndGame";
 
@@ -89,7 +89,7 @@ function TicTacToe() {
   }
 
   return (
-    <div>
+    <div className="container">
       <div className="win-history">
         <span>X's wins: {winCount.X}</span>
         <br />
@@ -108,6 +108,9 @@ function TicTacToe() {
         />
       )}
       <Square clickedArray={grid} handleClick={handleClick} />
+      <button className="reset-btn" onClick={restartGame}>
+        RESET GAME
+      </button>
     </div>
   );
 }

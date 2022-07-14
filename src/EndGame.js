@@ -4,7 +4,7 @@ function EndGame({ winCount, restartGame,clearHistory, player, draw }) {
   return (
     <div className="end-game-screen">
       {!draw && <span className="win-text">{player ? "O Won" : "X Won"}</span>}
-      {draw && <span className="win-text">Draw Game</span>}
+      {draw && <span className="win-text">MATCH DRAWN</span>}
       <span className="win-history">
         X's wins: {winCount.X}
         <br />

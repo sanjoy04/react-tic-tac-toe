@@ -1,5 +1,4 @@
 import React from "react";
-import EndGame from "./EndGame";
 
 function Square({clickedArray, handleClick}){
     return(
